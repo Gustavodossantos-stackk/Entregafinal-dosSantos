@@ -1,11 +1,19 @@
-@import "variables.scss";
-@import "reset.scss";
-@import "body.scss";
-@import "navegacion";
-@import "titulos_y_parrafos.scss";
-@import "cartas.scss";
-@import "medias_queries.scss";
-@import "grillas.scss";
-@import "formularios.scss";
-@import "mapas.scss";
-@import "footer.scss";
+// Colores
+$color-blanco: white;
+$color-blanco-humo: whitesmoke;
+$color-gris: grey;
+$azul-oscuro: #064f5c;
+$marron-claro: #9b917a;
+$negro: black;
+$marron-oscuro: #685c41;
+$verde-agua: #0b8379;
+$gris-oscuro: #534c4c; 
+$marron-suave: #807969;
+$color-tiza: #fff9f9;
+//Font size
+
+
+
+// Media-queries
+
+$media-query-mobile: 420px;

@@ -6,11 +6,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #999999;
+  border: 1px solid $color-gris;
   border-radius: 5%;
-  box-shadow: 15px 15px 20px #534c4c;
+  box-shadow: 15px 15px 20px $gris-oscuro;
   padding-bottom: 5px;
-  background: #807969;
+  background: $marron-suave;
 }
 
 .form input {

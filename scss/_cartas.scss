@@ -1,13 +1,13 @@
 .carta-1,
 .carta-3 {
-  color: white;
+  color: $color-blanco;
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  border: 1px solid whitesmoke;
-  background: #9b917a;
+  border: 1px solid $color-blanco-humo;
+  background: $marron-claro;
   padding: 10px;
   padding-bottom: 15px;
 }
@@ -19,13 +19,13 @@
 }
 
 .carta-2 {
-  color: white;
+  color: $color-blanco;
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #685c41;
-  border: 1px solid whitesmoke;
+  background-color: $marron-oscuro;
+  border: 1px solid $color-blanco-humo;
   padding: 10px;
   margin: 10px;
 }

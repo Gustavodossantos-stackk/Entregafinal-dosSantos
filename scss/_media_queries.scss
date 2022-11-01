@@ -1,4 +1,4 @@
-@media screen and (max-width: 420px) {
+@media screen and (max-width: $media-query-mobile) {
   * {
     box-sizing: border-box;
   }
@@ -39,8 +39,8 @@
   }
 
   ul {
-    background: #064f5c;
-    color: #064f5c;
+    background: $azul-oscuro;
+    color: $azul-oscuro;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     display: block;
@@ -52,7 +52,7 @@
 
   a:hover {
     background-color: #0b8379;
-    color: black;
+    color: $negro;
     border-radius: 20%;
     transition: 0.8s;
   }
@@ -72,13 +72,13 @@
   .carta-1,
   .carta-2,
   .carta-3 {
-    color: white;
+    color: $color-blanco;
     font-size: 20px;
     display: block;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    border: 1px solid whitesmoke;
+    border: 1px solid $color-blanco-humo;
     padding: 10px;
     object-fit: contain;
   }

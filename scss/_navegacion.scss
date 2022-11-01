@@ -1,6 +1,6 @@
 ul {
-  background: #064f5c;
-  color: #064f5c;
+  background: $azul-oscuro;
+  color: $azul-oscuro;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -9,13 +9,13 @@ ul {
 }
 
 a {
-  color: #fff9f9;
+  color: $color-tiza;
   text-decoration: none;
 }
 
 a:hover {
-  background-color: #0b8379;
-  color: black;
+  background-color: $verde-agua;
+  color: $negro;
   border-radius: 3px;
   padding: 8px 12px;
   transition: 0.7s;

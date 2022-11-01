@@ -9,7 +9,7 @@
 
 .grid-item {
   background-color: #CEC5B0;
-  border: 1px solid white;
+  border: 1px solid $color-blanco;
   padding: 20px;
   font-size: 30px;
   text-align: center;
@@ -24,7 +24,7 @@
 }
 
 .grid-item:hover {
-  background: grey;
+  background: $color-gris;
 }
 
 .grid-item img:hover {
