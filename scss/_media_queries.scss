@@ -1,90 +1,72 @@
-@media screen and (max-widht: $media-query-desktop) {
-  * {
-    box-sizing: border-box;
-  }
+@media screen and (max-width: $media-query-desktop) {
+  #cuerpo {
+    background: #CEC5B0;
+    justify-content: center;
+    padding: 0%;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+    .contenido img {
+    width: 10px;}
+    } 
 
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  h1 {
-    font-size: 1.6em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  h3 {
-    font-size: 1.3em;
-  }
-
-  p {
-    font-size: 1em;
+  a {
+    color: #fff9f9;
+    text-decoration: none;
   }
 
   a:hover {
-    background-color: $verde-agua;
-    color: $negro;
-    border-radius: 20%;
-    transition: 0.8s;
+    background-color: #0b8379;
+    color: black;
+    border-radius: 3px;
+    padding: 8px 12px;
+    transition: 0.7s;
+    text-decoration: none;
   }
 
-  header .contenido {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 10px;
-  }
-
-  #principal img {
-    height: 420px;
-    width: 100%;
-    object-fit: contain;
-  }
-
-  #nosotros {
-    display: block;
-    flex-direction: column;
+  .navegacion {
+    margin-right: 20px;
   }
 
   .carta-1,
-  .carta-2,
   .carta-3 {
-    color: $color-blanco;
-    font-size: $large;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid $color-blanco-humo;
-    object-fit: contain;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    border: 1px solid whitesmoke;
+    background: #9b917a;
+    padding: 10px;
+    padding-bottom: 15px;
+  }
+
+  .carta-2 {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    border: 1px solid whitesmoke;
+    background: #685c41;
+    padding: 10px;
+    padding-bottom: 15px;
+    flex: 1;
+    flex-direction: column;
   }
 
   .carta-img {
     height: 350px;
-    width: 100%;
+    width: 53%;
+    padding: 10px;
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax (15rem, 1fr));
-    grid-template-rows: 300 300;
-    margin-top: 40px;
-
+  .respaldo {
+    padding: 10px;
   }
 
-  .grid-item {
-    background-color: $color-fondo;
-    border: 1px solid $gris-oscuro;
-    font-size: $large;
-    text-align: contain;
-  }
-
-  .grid-item img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+  #servicios {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    row-gap: 10px;
+    padding: 15px;
   }
 }
 
