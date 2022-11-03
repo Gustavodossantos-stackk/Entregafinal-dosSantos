@@ -19,11 +19,6 @@ a {
 .navegacion {
   margin-right: 20px; }
 
-aside {
-  text-align: right;
-  padding-right: 10px;
-  font-size: 20px; }
-
 .carta-1,
 .carta-3 {
   color: white;
@@ -159,8 +154,27 @@ footer {
   font: normal normal 14px;
   color: white;
   letter-spacing: 2px; }
+  footer .redes-sociales a {
+    color: white;
+    border: 1px solid #064f5c;
+    text-decoration: none; }
 
-@media screen and (min-width: 300px) and (max-width: 420px) {
+.fa-facebook, .fa-instagram, .fa-whatsapp {
+  background-color: blue; }
+
+.fa-instagram {
+  background-color: #88279b; }
+
+.fa-whatsapp {
+  background-color: green; }
+
+.fa-facebook, .fa-instagram, .fa-whatsapp {
+  width: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center; }
+
+@media screen and (max-widht: 1200px) {
   * {
     box-sizing: border-box; }
   body {
@@ -179,6 +193,129 @@ footer {
     color: black;
     border-radius: 20%;
     transition: 0.8s; }
+  header .contenido {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px; }
+  #principal img {
+    height: 420px;
+    width: 100%;
+    object-fit: contain; }
+  #nosotros {
+    display: block;
+    flex-direction: column; }
+  .carta-1,
+  .carta-2,
+  .carta-3 {
+    color: white;
+    font-size: 20px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid whitesmoke;
+    object-fit: contain; }
+  .carta-img {
+    height: 350px;
+    width: 100%; }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax 15rem, 1fr);
+    grid-template-rows: 300 300;
+    margin-top: 40px; }
+  .grid-item {
+    background-color: #CEC5B0;
+    border: 1px solid #534c4c;
+    font-size: 20px;
+    text-align: contain; }
+  .grid-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; } }
+
+@media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box; }
+  body {
+    margin: 0; }
+  h1 {
+    font-size: 1.7em; }
+  h2 {
+    font-size: 1.6em; }
+  h3 {
+    font-size: 1.4em; }
+  p {
+    font-size: 1em; }
+  .imagen1 {
+    width: 100%; }
+  a:hover {
+    background-color: #0b8379;
+    color: black;
+    border-radius: 20%;
+    transition: 0.8s; }
+  header .contenido {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px; }
+  #principal img {
+    height: 420px;
+    width: 90%;
+    object-fit: contain; }
+  #nosotros {
+    display: block;
+    flex-direction: column;
+    padding: 0px; }
+  .carta-1,
+  .carta-2,
+  .carta-3 {
+    display: block;
+    flex-direction: column;
+    object-fit: contain; }
+  .carta-1 img,
+  .carta-2 img,
+  .carta-3 img {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+    padding: 0px; }
+  .grid-container {
+    grid-template-columns: auto auto;
+    grid-template-rows: 300px 300px;
+    margin-top: 50px; }
+  .grid-item {
+    background-color: #CEC5B0;
+    border: 1px solid #534c4c;
+    font-size: 20px; }
+    .grid-item img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain; } }
+
+@media screen and (max-width: 420px) {
+  * {
+    box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0; }
+  h1 {
+    font-size: 1.6em; }
+  h2 {
+    font-size: 1.5em; }
+  h3 {
+    font-size: 1.3em; }
+  p {
+    font-size: 1em; }
+  a:hover {
+    background-color: #0b8379;
+    color: black;
+    border-radius: 20%;
+    transition: 0.8s; }
+  header .contenido {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px; }
   #principal img {
     height: 380px;
     width: 100%;
@@ -215,120 +352,3 @@ footer {
       height: 100%;
       width: 100%;
       object-fit: cover; } }
-
-@media screen and (max-width: 768px) {
-  * {
-    box-sizing: border-box; }
-  body {
-    margin: 0; }
-  h1 {
-    font-size: 1.7em; }
-  h2 {
-    font-size: 1.6em; }
-  h3 {
-    font-size: 1.4em; }
-  p {
-    font-size: 1em; }
-  .imagen1 {
-    width: 100%; }
-  a:hover {
-    background-color: #0b8379;
-    color: black;
-    border-radius: 20%;
-    transition: 0.8s; }
-  #principal img {
-    height: 420px;
-    width: 90%;
-    object-fit: contain; }
-  #nosotros {
-    display: block;
-    flex-direction: column;
-    padding: 0px; }
-  .carta-1,
-  .carta-2,
-  .carta-3 {
-    color: white;
-    font-size: 20px;
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid whitesmoke;
-    object-fit: contain; }
-  .carta-1 img,
-  .carta-2 img,
-  .carta-3 img {
-    height: 200px;
-    width: 100%;
-    object-fit: contain;
-    padding: 0px; }
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 300px;
-    margin-top: 50px;
-    padding-left: 70px;
-    padding-right: 70px; }
-  .grid-item {
-    background-color: #CEC5B0;
-    border: 1px solid #534c4c;
-    font-size: 20px;
-    text-align: center; }
-    .grid-item img {
-      height: 100%;
-      width: 100%;
-      object-fit: contain; } }
-
-@media screen and (max-widht: 1200px) {
-  * {
-    box-sizing: border-box; }
-  body {
-    margin: 0;
-    padding: 0; }
-  h1 {
-    font-size: 1.6em; }
-  h2 {
-    font-size: 1.5em; }
-  h3 {
-    font-size: 1.3em; }
-  p {
-    font-size: 1em; }
-  a:hover {
-    background-color: #0b8379;
-    color: black;
-    border-radius: 20%;
-    transition: 0.8s; }
-  #principal img {
-    height: 420px;
-    width: 100%;
-    object-fit: contain; }
-  #nosotros {
-    display: block;
-    flex-direction: column; }
-  .carta-1,
-  .carta-2,
-  .carta-3 {
-    color: white;
-    font-size: 20px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid whitesmoke;
-    object-fit: contain; }
-  .carta-img {
-    height: 350px;
-    width: 100%; }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax 15rem, 1fr);
-    grid-template-rows: 300 300;
-    margin-top: 40px; }
-  .grid-item {
-    background-color: #CEC5B0;
-    border: 1px solid #534c4c;
-    font-size: 20px;
-    text-align: contain; }
-  .grid-item img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain; } }

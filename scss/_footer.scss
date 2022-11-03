@@ -7,4 +7,38 @@ footer {
     font: normal normal 14px;
     color: $color-blanco;
     letter-spacing: 2px;
+
+    .redes-sociales a{
+        color: $color-blanco;
+        border: 1px solid $azul-oscuro;
+        text-decoration: none;
+    }
+}
+
+$redes: (
+    facebook: blue,
+    instagram: #88279b,
+    whatsapp: green
+);
+
+@each $redsocial,
+$colordered in $redes {
+    .fa-#{$redsocial} {
+        background-color: $colordered;
+    }
+}
+
+.fa-facebook {
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-instagram {
+    @extend .fa-facebook;
+}
+
+.fa-whatsapp {
+    @extend .fa-facebook;
 }

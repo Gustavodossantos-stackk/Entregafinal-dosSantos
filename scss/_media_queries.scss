@@ -1,4 +1,4 @@
-@media screen and (min-width: 300px) and (max-width: $media-query-mobile) {
+@media screen and (max-widht: $media-query-desktop) {
   * {
     box-sizing: border-box;
   }
@@ -29,6 +29,197 @@
     color: $negro;
     border-radius: 20%;
     transition: 0.8s;
+  }
+
+  header .contenido {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  #principal img {
+    height: 420px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  #nosotros {
+    display: block;
+    flex-direction: column;
+  }
+
+  .carta-1,
+  .carta-2,
+  .carta-3 {
+    color: $color-blanco;
+    font-size: $large;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-blanco-humo;
+    object-fit: contain;
+  }
+
+  .carta-img {
+    height: 350px;
+    width: 100%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax (15rem, 1fr));
+    grid-template-rows: 300 300;
+    margin-top: 40px;
+
+  }
+
+  .grid-item {
+    background-color: $color-fondo;
+    border: 1px solid $gris-oscuro;
+    font-size: $large;
+    text-align: contain;
+  }
+
+  .grid-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: $media-query-tablet) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .imagen1 {
+    width: 100%;
+  }
+
+  a:hover {
+    background-color: $verde-agua;
+    color: $negro;
+    border-radius: 20%;
+    transition: 0.8s;
+  }
+
+  header .contenido {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  #principal img {
+    height: 420px;
+    width: 90%;
+    object-fit: contain;
+  }
+
+  #nosotros {
+    display: block;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .carta-1,
+  .carta-2,
+  .carta-3 {
+
+    display: block;
+    flex-direction: column;
+    object-fit: contain;
+  }
+
+  .carta-1 img,
+  .carta-2 img,
+  .carta-3 img {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+    padding: 0px;
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto;
+    grid-template-rows: 300px 300px;
+    margin-top: 50px;
+  }
+
+
+  .grid-item {
+    background-color: $color-fondo;
+    border: 1px solid $gris-oscuro;
+    font-size: 20px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@media screen and (max-width: $media-query-mobile) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  a:hover {
+    background-color: $verde-agua;
+    color: $negro;
+    border-radius: 20%;
+    transition: 0.8s;
+  }
+
+  header .contenido {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+
   }
 
   #principal img {
@@ -80,182 +271,5 @@
       width: 100%;
       object-fit: cover;
     }
-  }
-}
-
-@media screen and (max-width: $media-query-tablet) {
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-  }
-
-  h1 {
-    font-size: 1.7em;
-  }
-
-  h2 {
-    font-size: 1.6em;
-  }
-
-  h3 {
-    font-size: 1.4em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-
-  .imagen1 {
-    width: 100%;
-  }
-
-  a:hover {
-    background-color: $verde-agua;
-    color: $negro;
-    border-radius: 20%;
-    transition: 0.8s;
-  }
-
-  #principal img {
-    height: 420px;
-    width: 90%;
-    object-fit: contain;
-  }
-
-  #nosotros {
-    display: block;
-    flex-direction: column;
-    padding: 0px;
-  }
-
-  .carta-1,
-  .carta-2,
-  .carta-3 {
-    color: $color-blanco;
-    font-size: 20px;
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid $color-blanco-humo;
-    object-fit: contain;
-  }
-
-  .carta-1 img,
-  .carta-2 img,
-  .carta-3 img {
-    height: 200px;
-    width: 100%;
-    object-fit: contain;
-    padding: 0px;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 300px;
-    margin-top: 50px;
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-
-
-  .grid-item {
-    background-color: $color-fondo;
-    border: 1px solid $gris-oscuro;
-    font-size: 20px;
-    text-align: center;
-
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: contain;
-    }
-  }
-}
-
-@media screen and (max-widht: $media-query-desktop) {
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  h1 {
-    font-size: 1.6em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  h3 {
-    font-size: 1.3em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-
-  a:hover {
-    background-color: $verde-agua;
-    color: $negro;
-    border-radius: 20%;
-    transition: 0.8s;
-  }
-
-  #principal img {
-    height: 420px;
-    width: 100%;
-    object-fit: contain;
-  }
-
-  #nosotros {
-    display: block;
-    flex-direction: column;
-  }
-
-  .carta-1,
-  .carta-2,
-  .carta-3 {
-    color: $color-blanco;
-    font-size: $large;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid $color-blanco-humo;
-    object-fit: contain;
-  }
-
-  .carta-img {
-    height: 350px;
-    width: 100%;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax (15rem, 1fr));
-    grid-template-rows: 300 300;
-    margin-top: 40px;
-
-  }
-
-  .grid-item {
-    background-color: $color-fondo;
-    border: 1px solid $gris-oscuro;
-    font-size: $large;
-    text-align: contain;
-  }
-
-  .grid-item img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
   }
 }
