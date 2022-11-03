@@ -1,15 +1,19 @@
-#volver-a-inicio {
-    color: $azul-oscuro;
+@mixin center-center {
     text-align: center;
-    padding: 2px;
     justify-content: center;
-    display: flex;
+}
 
+
+#volver-a-inicio {
+    @include center-center;
+    color: $azul-oscuro;
+    padding: 2px;
+    display: flex;
 }
 
 .linea {
+    @include center-center;
     color: $color-gris;
-    text-align: center;
     font-size: 18px;
 
 }

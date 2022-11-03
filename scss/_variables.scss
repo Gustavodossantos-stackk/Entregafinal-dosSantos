@@ -10,10 +10,19 @@ $verde-agua: #0b8379;
 $gris-oscuro: #534c4c; 
 $marron-suave: #807969;
 $color-tiza: #fff9f9;
-//Font size
+$color-fondo: #CEC5B0;
 
+
+//Font size
+$small: 10px;
+$medium: 16px;
+$large: 20px;
+$xlarge: 24px;
+$xxlarge: 30px;
 
 
 // Media-queries
 
 $media-query-mobile: 420px;
+$media-query-tablet: 768px;
+$media-query-desktop: 1200px;

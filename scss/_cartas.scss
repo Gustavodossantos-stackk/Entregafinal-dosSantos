@@ -1,43 +1,40 @@
-.carta-1,
-.carta-3 {
+@mixin carta ($variable) {
   color: $color-blanco;
-  font-size: 20px;
+  font-size: $large;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: $small;
   border: 1px solid $color-blanco-humo;
-  background: $marron-claro;
-  padding: 10px;
+  background: $variable;
+  padding: $small;
   padding-bottom: 15px;
+}
+
+
+.carta-1,
+.carta-3 {
+  @include carta($marron-claro)
+}
+
+.carta-2 {
+  @include carta($marron-oscuro)
 }
 
 .carta-img {
   height: 350px;
   width: 100%;
-  padding: 10px;
-}
-
-.carta-2 {
-  color: $color-blanco;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $marron-oscuro;
-  border: 1px solid $color-blanco-humo;
-  padding: 10px;
-  margin: 10px;
+  padding: $small;
 }
 
 .respaldo {
-  padding: 10px;
+  padding: $small;
 }
 
 #servicios {
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  row-gap: 10px;
+  margin: $small;
+  row-gap: $small;
   padding: 15px;
 }

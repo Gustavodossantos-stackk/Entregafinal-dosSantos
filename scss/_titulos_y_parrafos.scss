@@ -1,19 +1,23 @@
-h1,
-h2 {
+@mixin center {
     text-align: center;
     justify-content: center;
+}
+
+h1,
+h2 {
+    @include center;
 }
 
 .parrafo {
-    text-align: center;
-    padding-right: 10px;
-    font-size: 20px;
+    @include center;
+    padding-right: $small;
+    font-size: $large;
     color: $azul-oscuro;
-    justify-content: center;
+
 }
 
 .contenido {
-    font-size: 20px;
+    font-size: $large;
     padding: 0px;
     display: block;
     text-align: center;

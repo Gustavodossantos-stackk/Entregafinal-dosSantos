@@ -11,10 +11,10 @@
   box-shadow: 15px 15px 20px $gris-oscuro;
   padding-bottom: 5px;
   background: $marron-suave;
-}
 
-.form input {
-  width: 90;
-  height: 30px;
-  margin: 0.5rem;
+  input {
+    width: 90;
+    height: $xxlarge;
+    margin: 0.5rem;
+  }
 }
