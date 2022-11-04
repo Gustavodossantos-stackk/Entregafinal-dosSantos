@@ -16,6 +16,9 @@ a {
     transition: 0.7s;
     text-decoration: none; }
 
+.contenido .logo {
+  width: 100%; }
+
 .navegacion {
   margin-right: 20px; }
 
@@ -174,64 +177,43 @@ footer {
   display: flex;
   justify-content: center; }
 
-@media screen and (max-widht: 1200px) {
-  * {
-    box-sizing: border-box; }
-  body {
-    margin: 0;
-    padding: 0; }
-  h1 {
-    font-size: 1.6em; }
-  h2 {
-    font-size: 1.5em; }
-  h3 {
-    font-size: 1.3em; }
-  p {
-    font-size: 1em; }
+@media screen and (max-width: 1200px) {
+  #cuerpo {
+    background: #CEC5B0;
+    justify-content: center;
+    padding: 0%;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+  a {
+    color: #fff9f9;
+    text-decoration: none; }
   a:hover {
     background-color: #0b8379;
     color: black;
-    border-radius: 20%;
-    transition: 0.8s; }
-  header .contenido {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 10px; }
-  #principal img {
-    height: 420px;
-    width: 100%;
-    object-fit: contain; }
-  #nosotros {
-    display: block;
-    flex-direction: column; }
-  .carta-1,
-  .carta-2,
-  .carta-3 {
-    color: white;
-    font-size: 20px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid whitesmoke;
-    object-fit: contain; }
-  .carta-img {
-    height: 350px;
+    border-radius: 3px;
+    padding: 8px 12px;
+    transition: 0.7s;
+    text-decoration: none; }
+  .logo {
     width: 100%; }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax 15rem, 1fr);
-    grid-template-rows: 300 300;
-    margin-top: 40px; }
-  .grid-item {
-    background-color: #CEC5B0;
-    border: 1px solid #534c4c;
-    font-size: 20px;
-    text-align: contain; }
-  .grid-item img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain; } }
+  .navegacion {
+    margin-right: 20px; }
+  .carta-1,
+  .carta-3 {
+    flex-direction: column;
+    flex: 1; } }
+
+.carta-2 {
+  flex: 1;
+  flex-direction: column; }
+
+.carta-img {
+  height: 350px;
+  width: 50%;
+  padding: 10px; }
+
+.respaldo {
+  padding: 10px; }
 
 @media screen and (max-width: 768px) {
   * {
@@ -253,6 +235,8 @@ footer {
     color: black;
     border-radius: 20%;
     transition: 0.8s; }
+  .logo {
+    width: 100%; }
   header .contenido {
     display: flex;
     flex-direction: column;
